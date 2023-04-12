@@ -21,21 +21,43 @@
     <main>
         <div>
             <h1>Como me contratar?</h1>
-            <img src="" alt="imagem do teclado">
+            <img src="assets/images/contato/backgroud01.jpg" alt="imagem do teclado">
         </div>
         <div>
             <p>Preencha suas principais informações no formulário ao lado que nossa equipe entrará em contato o mais rápido possível.</p>
             <form action="submit">
-                    <h1>Contato - Equipe Gabnaja</h1>
-                    <label for="form"> Qual o seu nome?</label>
-                    <h4>Qual seu telefone?</h4>
-                    <label for="email"> Qual seu e-mail?</label>
-                    <h4>Como conheceu nosso trabalho?</h4>
-                    <input type="checkbox">Redes Sociais
-                    <input type="checkbox">Amigues
-                    <input type="checkbox">Soundcloud
-                    <input type="checkbox">Acompanho seu trabalho
-                    <input type="checkbox">Outro                
+                    <label>Contato</label>
+                    
+                    <p>
+                        <label for="name"> Qual o seu nome?</label>
+                        <br>
+                        <input type="text" id="user" name="name">
+                    </p>
+                    <p>
+                        <label for="numero"> Qual é o seu telefone?</label>
+                        <br>
+                        <input type="number" id="numero" name="numero">
+                    </p>
+                    <p>
+                        <label for="email">Qual seu e-mail?</label>
+                        <br>
+                        <input type= "email" id="email" name="email">
+                    </p>
+                    <p>
+                        <label for="checkbox"> Como conheceu nosso trabalho?</label>
+                        <br>
+                        <input type="checkbox">Redes Sociais
+                        <br>
+                        <input type="checkbox">Amigues
+                        <br>
+                        <input type="checkbox">Soundcloud
+                        <br>
+                        <input type="checkbox">Acompanho seu trabalho
+                        <br>
+                        <input type="checkbox">Outro
+                    </p>
+                    <button type="submit">Enviar</button>
+                              
             </form>
         </div>
     </main>
