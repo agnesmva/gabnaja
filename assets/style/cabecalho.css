@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    text-shadow: none;
+    font-family: 'Barlow Condensed', sans-serif
+}
+header{
+    background-color: rgb(28,28,28, 0.5);
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 90px;
+    margin-bottom: 1px;
+    border-bottom: solid;
+}
+.cabecalho {
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 17px;
+    text-align: center;
+}
+nav ul li.index a {
+    color: rgb(237,226,241) !important;
+    text-decoration: none;
+}
+a:link {
+    color: rgb(237,226,241) !important;
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(237,226,241) !important;
+}
+.hp:hover{
+    background-color: rgb(28, 28, 28);
+    text-transform: uppercase;
+}
+.jobs:hover{
+    background-color: rgb(28, 28, 28);
+    width: 40px;
+    text-transform: uppercase;
+}
+.sets:hover{
+    background-color: rgb(28, 28, 28);
+    width: 40px;
+    text-transform: uppercase;
+}
+.contact:hover{
+    background-color: rgb(28, 28, 28);
+    width: 70px;
+    text-transform: uppercase;
+}
