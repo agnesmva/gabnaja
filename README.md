@@ -1,2 +1,3 @@
-# gabnaja
-Site criado para aprender html, css e js. 
+# Gabnaja
+O objetivo do site é criar um portifólio para uma DJ da cena local. 
+
