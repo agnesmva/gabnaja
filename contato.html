@@ -7,6 +7,7 @@
     <title>Contato</title>
     <link rel="stylesheet" type="text/css" href="assets/style/style.css"/>
     <link rel="stylesheet" href="assets/style/cabecalho.css">
+    <link rel="stylesheet" href="assets/style/formulario.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -20,44 +21,46 @@
         </nav>
     </header>
     <main>
-        <div>
-            <h1>Como me contratar?</h1>
-            <img src="assets/style/images/contato/backgroud01.jpg" alt="imagem do teclado">
+        <div class="titulopadrao">
+            <h1>Como me contratar ?</h1>
         </div>
-        <div>
-            <p>Preencha suas principais informações no formulário ao lado que nossa equipe entrará em contato o mais rápido possível.</p>
-            <form action="submit">
-                    <label>Contato</label>
+        <div class="vidro">
+            
+            <div><p>Preencha suas principais informações no formulário abaixo que nossa equipe entrará em contato o mais rápido possível.</p>
+                <p>Agradecemos o seu contato e aguardamos ansiosamente para atendê-lo(a) da melhor maneira possível!</p> 
+                 <form class= "formulario" action="submit" autocomplete="on">
+                    <label class="contato">Contato</label>
                     
                     <p>
                         <label for="name"> Qual o seu nome?</label>
                         <br>
-                        <input type="text" id="user" name="name">
+                        <input class= "caixa" type="text" id="user" name="name" maxlength="40" placeholder="Gabriella Naja"> 
                     </p>
                     <p>
                         <label for="numero"> Qual é o seu telefone?</label>
                         <br>
-                        <input type="number" id="numero" name="numero">
+                        <input class= "caixa" type="tel" id="numero" name="numero" maxlength="11" placeholder="81 91919191">
                     </p>
                     <p>
                         <label for="email">Qual seu e-mail?</label>
                         <br>
-                        <input type= "email" id="email" name="email">
+                        <input class= "caixa" type= "email" id="email" name="email" checked placeholder="exemplo@exemplo.com">
                     </p>
                     <p>
-                        <label for="checkbox"> Como conheceu nosso trabalho?</label>
+                        <label class="trabalho" for="checkbox"> Como conheceu nosso trabalho?</label>
                         <br>
-                        <input type="checkbox">Redes Sociais
                         <br>
-                        <input type="checkbox">Amigues
+                        <input class="caixinha" type="checkbox">Redes Sociais
                         <br>
-                        <input type="checkbox">Soundcloud
+                        <input class="caixinha" type="checkbox">Amigues
                         <br>
-                        <input type="checkbox">Acompanho seu trabalho
+                        <input class="caixinha" type="checkbox">Soundcloud
                         <br>
-                        <input type="checkbox">Outro
+                        <input class="caixinha" type="checkbox">Acompanho seu trabalho
+                        <br>
+                        <input class="caixinha" type="checkbox">Outro
                     </p>
-                    <button type="submit">Enviar</button>
+                    <button class="botao" type="submit">Enviar</button>
                               
             </form>
         </div>
