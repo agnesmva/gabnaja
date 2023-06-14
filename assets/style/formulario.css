@@ -3,10 +3,14 @@
     display: flex;
     gap: 1%;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 26px;
     background-color: rgb(94, 61, 94);
 }
-
+.paragrafo{
+    font-size: 4vw;
+    margin-bottom: 7vw;
+    
+}
 .formulario {
     background: rgba(255, 255, 255, 0.377);
     backdrop-filter: blur(13.5px);
