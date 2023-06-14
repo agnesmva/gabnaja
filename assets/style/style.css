@@ -19,7 +19,7 @@ body {
 }
 
 .fundotitulo {
-    background-image: url(/assets/images/home/backgroundmain.png);
+    background-image: url(./assets/images/home/backgroundmain.png);
     background-repeat: repeat;
     height: 264px;
     display: flex;
@@ -63,12 +63,12 @@ body {
 }
 #hottpmdays{
     margin-top: 20px;
-    background-image: url(/assets/style/images/sets/002.png);
+    background-image: url(./assets/style/images/sets/002.png);
     
 }
 #hyperpoison{
     margin-top: 40px;
-    background-image: url(/assets/style/images/sets/001.png);
+    background-image: url(./assets/style/images/sets/001.png);
 }
 .texto {
     font-style: normal;
