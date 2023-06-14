@@ -53,7 +53,6 @@ a:visited {
 .jobs:hover,
 .sets:hover,
 .contact:hover {
-    background-color: rgb(28, 28, 28);
     text-transform: uppercase;
 }
 
