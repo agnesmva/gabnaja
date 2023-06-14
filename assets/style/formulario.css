@@ -1,49 +1,150 @@
-.vidro{
-    
-    padding: 100px;
+.vidro {
+    padding: 5%;
     display: flex;
-    gap: 10px;
+    gap: 1%;
     justify-content: center;
-    font-size: 42px;
-    
-  }
+    font-size: 4vw;
+    background-color: rgb(94, 61, 94);
+}
+
 .formulario {
     background: rgba(255, 255, 255, 0.377);
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     color: #1C1C1C;
     font-weight: 700;
-    font-size: 24px;
-    padding: 10px;
-    margin-left: 32%;
+    font-size: 4vw;
+    padding: 1%;
+    margin-left: 10%;
     display: inline-flex;
     flex-direction: column;
     justify-items: center;
     flex-wrap: wrap;
     width: fit-content;
     height: fit-content;
-
-    
-
 }
+
 .caixa {
-    padding: 1%;
-    width: 250px;
-    border: groove 2px ;
+    padding: 0.5%;
+    width: 20vw;
+    border: groove 0.2em;
     color: #1c1c1c;
-    font-size: 24px;
+    font-size: 2.5vw;
     font-weight: 500;
     display: flex;
     justify-self: center;
 }
-.botao{
-    margin-left: 45px;
-    font-size: 18px;
-    margin-bottom: 20px;
+
+.botao {
+    margin-left: 3vw;
+    font-size: 1.8vw;
+    margin-bottom: 2vw;
 }
-.contato{
-    margin-left: 110px;
-    font-size: 28px;
+
+.contato {
+    margin-left: 20%;
+    font-size: 2.8vw;
+}
+
+/* Mídia Queries */
+
+/* Tamanhos de tela pequenos */
+@media only screen and (max-width: 600px) {
+    .vidro {
+        padding: 10%;
+        font-size: 6vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .paragrafo{
+        font-size: 6vw;
+        margin-bottom: 7vw;
+        
+    }
+
+    .formulario {
+        padding-left: 10%;
+        font-size: 6vw;
+        margin-left: 5%;
+    }
+
+    .caixa {
+        width: 40vw;
+        font-size: 5vw;
+    }
+
+    .botao {
+        margin-left: 2vw;
+        font-size: 5vw;
+        margin-bottom: 4vw;
+    }
+
+    .contato {
+        margin-left: 30%;
+        font-size: 6vw;
+    }
+}
+
+/* Tamanhos de tela médios */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .vidro {
+        padding: 8%;
+        font-size: 3vw;
+    }
+    .paragrafo{
+        font-size: 24px;
+        margin-top: 20%;
+        height: 30vw;
+    }
+    .formulario {
+        font-size: 3vw;
+        margin-left: 8%;
+    }
+
+    .caixa {
+        width: 25vw;
+        font-size: 2.5vw;
+    }
+
+    .botao {
+        margin-left: 6vw;
+        font-size: 2vw;
+        margin-bottom: 3vw;
+    }
+
+    .contato {
+        margin-left: 15%;
+        font-size: 3.5vw;
+    }
+}
+
+/* Tamanhos de tela grandes */
+@media only screen and (min-width: 1025px) {
+    .vidro {
+        padding: 100px;
+        font-size: 24px;
+    }
+
+    .formulario {
+        font-size: 24px;
+        margin-left: 32%;
+    }
+
+    .caixa {
+        width: 250px;
+        font-size: 24px;
+    }
+
+    .botao {
+        margin-left: 45px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .contato {
+        margin-left: 35%;
+        font-size: 28px;
+    }
 }
