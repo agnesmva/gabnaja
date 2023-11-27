@@ -30,12 +30,13 @@ body {
 .titulopadrao {
     background-color: #ffffff10;
     backdrop-filter: blur(10px);
-    height: 300px;
     display: flex;
     font-size: 62px;
     justify-content: center;
     text-align: center;
-    margin-bottom: 20px;
+}
+#centralizar{
+    padding: 2.5%;
 }
 
 .gab {
@@ -78,6 +79,7 @@ body {
     width: 590px;
 }
 .texto2 {
+    margin-top: 10%;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -85,8 +87,8 @@ body {
 }
 
 .contrata {
-    position: relative;
-    margin-left: 25%;
+    margin-top: 2%;
+        margin-left: 25%;
 }
 
 button {
@@ -105,15 +107,6 @@ button {
 button:hover {
     background-color: rgba(129, 8, 241, 0.58);
 }
-
-.lancamentos {
-    width: 470px;
-    height: 336px;
-    left: 855px;
-    top: 467px;
-    margin-right: 200px;
-}
-
 .soundcloud {
     font-size: 20px;
     color: #f34ddd;
@@ -131,6 +124,9 @@ button:hover {
     flex-direction: column;
     row-gap: 10%;
 }
+.primeiro{
+    margin-bottom: 10px;
+}
 
 .rodape {
     background-color: rgb(237, 226, 241);
@@ -147,9 +143,6 @@ button:hover {
     margin-left: 30%;
 }
 
-/* Mídia Queries */
-
-/* Tamanhos de tela pequenos */
 @media only screen and (max-width: 600px) {
     .gab {
         font-size: 38px;
@@ -191,7 +184,6 @@ button:hover {
     }
 }
 
-/* Tamanhos de tela médios */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .gab {
         margin-top: 2vw;
@@ -226,12 +218,9 @@ button:hover {
         margin-bottom: 40px;
         width: 200px;
     }
-    .segundo {
-        visibility: hidden;
-    }
 }
 
-/* Tamanhos de tela grandes */
+
 @media only screen and (min-width: 1025px) {
     .conteudo {
         justify-content: space-between;

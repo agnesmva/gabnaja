@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="shortcut icon" href="assets/style/images/logo.svg" type="image/x-icon">    
     <link rel="stylesheet" type="text/css" href="assets/style/style.css"/>
     <link rel="stylesheet" href="assets/style/cabecalho.css">
     <link rel="stylesheet" href="assets/style/formulario.css">
@@ -12,16 +13,23 @@
 <body>
     <header class="cabecalho">
         <nav>
-                 <ul>
+            <ul>
                 <li class="hp"><a href="index.html">Página Inicial</a></li>
-                <li class="jobs"><a href="jobs.html">Jobs</a></li>
+                <li class="jobs">
+                    <a href="jobs.html">Jobs</a>
+                    <ul class="submenu">
+                        <li><a href="#">breve</a></li>
+                        <li><a href="#">breve</a></li>
+                        <li><a href="#">breve</a></li>
+                    </ul>
+                </li>
                 <li class="sets"><a href="sets.html">Sets</a></li>
                 <li class="contact"><a href="contato.html">Contato</a></li>
-                 </ul>
+            </ul>
         </nav>
     </header>
     <main>
-        <div class="titulopadrao">
+        <div class="titulopadrao" id="centralizar">
             <h1>Como me contratar ?</h1>
         </div>
         <div class="vidro">
@@ -30,23 +38,23 @@
                     <p>Preencha suas principais informações no formulário abaixo que nossa equipe entrará em contato o mais rápido possível.</p>
                     <p>Agradecemos o seu contato e aguardamos ansiosamente para atendê-lo(a) da melhor maneira possível!</p>
                 </div>
-                 <form class= "formulario" action="submit" autocomplete="on">
+                 <form class= "formulario" autocomplete="off" onsubmit="enviarmensagem(event)">
                     <label class="contato">Contato</label>
                     
                     <p>
                         <label for="name"> Qual o seu nome?</label>
                         <br>
-                        <input class= "caixa" type="text" id="user" name="name" maxlength="40" placeholder="Gabriella Naja"> 
+                        <input class= "caixa" type="text" id="user" name="name" maxlength="40" placeholder="Gabriella Naja" required> 
                     </p>
                     <p>
                         <label for="numero"> Qual é o seu telefone?</label>
                         <br>
-                        <input class= "caixa" type="tel" id="numero" name="numero" maxlength="11" placeholder="81 91919191">
+                        <input class= "caixa" type="tel" id="numero" name="numero" maxlength="11" placeholder="81 91919191" required>
                     </p>
                     <p>
                         <label for="email">Qual seu e-mail?</label>
                         <br>
-                        <input class= "caixa" type= "email" id="email" name="email" checked placeholder="exemplo@exemplo.com">
+                        <input class= "caixa" type= "email" id="email" name="email" checked placeholder="exemplo@exemplo.com" required>
                     </p>
                     <p>
                         <label class="trabalho" for="checkbox"> Como conheceu nosso trabalho?</label>
@@ -62,7 +70,7 @@
                         <br>
                         <input class="caixinha" type="checkbox">Outro
                     </p>
-                    <button class="botao" type="submit">Enviar</button>
+                    <button class="botao" type="submit" value="enviarmensagem">Enviar</button>
                               
             </form>
         </div>
@@ -71,4 +79,10 @@
         <div>Desenvolvido para disciplina de introdução ao desenvolvimento Web do Descodificadas por <strong>@agnesmva</strong></div>
     </footer>
 </body>
+<script>
+     function enviarmensagem(event) {
+        event.preventDefault(); // Evita a submissão padrão do formulário
+        alert("Formulário enviado com sucesso");
+    }
+</script>
 </html>
