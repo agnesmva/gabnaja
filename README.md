@@ -1,2 +1,2 @@
-# gabnaja
-Site criado para aprender html, css e js. 
+# Gabnaja
+Site criado para treinar html, css e js. 
